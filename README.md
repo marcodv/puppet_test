@@ -36,6 +36,7 @@ Bringing machine 'puppetagent' up with 'virtualbox' provider...
 ```
 
 During the building phase of each instance, Vagrant will call the puppet commands defined in the Vagrantfile.
+Also the module and the site.pp file are copied from ther /vagrant folder to the puppet dir on the master.
 On the puppet server Vagrant will install the nginx and apt puppet modules.
 On the puppet agent, puppet will make a call to the master.
 On the master the module assigned to the agent is called *netcentric_puppet*.

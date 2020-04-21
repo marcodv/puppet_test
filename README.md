@@ -7,8 +7,8 @@ Once that the infrastrucutre is up and running you can connect to the 2 instance
 
 Create/extend an existing puppet module for Nginx including the following functionalities:
 ```
-    Create a proxy to redirect requests for http://domain.com to 10.10.10.10 and redirect requests for http://domain.com/resource to 20.20.20.20.
-    Create a forward proxy to log HTTP requests going from the internal network to the Internet including: request protocol, remote IP and time take to serve the request.
+Create a proxy to redirect requests for http://domain.com to 10.10.10.10 and redirect requests for http://domain.com/resource to 20.20.20.20.
+Create a forward proxy to log HTTP requests going from the internal network to the Internet including: request protocol, remote IP and time take to serve the request.
 ```
 
 ## Tech
@@ -35,9 +35,9 @@ Bringing machine 'puppet_server' up with 'virtualbox' provider...
 Bringing machine 'puppetagent' up with 'virtualbox' provider...
 ```
 
-During the building phase of each instance, Vagrant will call the puppet commands defined in the Vagrantfile.
-Also the module and the site.pp file are copied from ther /vagrant folder to the puppet dir on the master.
-On the puppet server Vagrant will install the nginx and apt puppet modules.
+During the building phase of each instance, Vagrant will call the puppet commands defined in the Vagrantfile.<br>
+Also the module and the site.pp file are copied from ther /vagrant folder to the puppet dir on the master.<br>
+On the puppet server Vagrant will install the nginx and apt puppet modules.<br>
 On the puppet agent, puppet will make a call to the master.
 On the master the module assigned to the agent is called *netcentric_puppet*.
 This module will be sure to install nginx with type of logs

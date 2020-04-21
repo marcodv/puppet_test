@@ -2,7 +2,7 @@
 
 Spin up small infrastracture made of a puppet agent and a puppet server based on Ubuntu precise64 
 
-This infrastructure is generate with Vagrant and all the instances are provisioned with Puppet.
+This infrastructure is generate with Vagrant and the agent instance is provisioned with Puppet.
 Once that the infrastrucutre is up and running you can connect to the 2 instances and check the nginx logs for the pupept-agent
 
 Create/extend an existing puppet module for Nginx including the following functionalities:
